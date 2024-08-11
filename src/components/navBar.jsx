@@ -1,5 +1,5 @@
 import React from "react";
-import GitHubImg from "../assets/github.png";
+import GitHubImg from "/assets/github.png";
 import CurrentDateTime from "../components/currentDateAndTime";
 
 const NavBar = () => {

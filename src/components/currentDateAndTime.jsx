@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function CurrentDateTime() {
+function CurrentDateTime({ showAmPm = true, showDate = true }) {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -12,12 +12,20 @@ function CurrentDateTime() {
     return () => clearInterval(timer);
   }, []);
 
+  const formattedTime = currentDateTime.toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: showAmPm,
+  });
+
+  const displayTime = showAmPm
+    ? formattedTime.replace("am", "AM").replace("pm", "PM")
+    : formattedTime;
+
   return (
-    <div className="p-4 bg-base-100 shadow-lg rounded-lg">
+    <div className="p-4">
       <p className="text-lg mt-2">
-        {currentDateTime.toLocaleDateString("en-GB", { hour12: false })}
-        {"  "}
-        {currentDateTime.toLocaleTimeString()}
+        {showDate && currentDateTime.toLocaleDateString()} {displayTime}
       </p>
     </div>
   );
