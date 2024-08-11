@@ -2,7 +2,6 @@ import React from "react";
 import { FiWind } from "react-icons/fi";
 import { CgThermostat } from "react-icons/cg";
 import { MdFilterDrama } from "react-icons/md";
-import { WiHumidity } from "react-icons/wi";
 import Humidity from "/assets/humidity.svg";
 import Cloud from "/assets/icons/cloud.png";
 import ForecastCard from "./cards/forecastCard";
@@ -12,7 +11,7 @@ const currentWeather = () => {
     <>
       <div className="flex flex-col items-center w-1/2">
         <h1 className="font-bold text-[24px]">CURRENT WEATHER</h1>
-        <div className="flex justify-between w-full p-10 py-6">
+        <div className="flex justify-between w-full px-10 py-6">
           <div className="flex flex-col justify-between items-center">
             <h1 className="font-bold">LONDON,DE</h1>
             <p>Today 13 Feb</p>
@@ -59,8 +58,10 @@ const currentWeather = () => {
         </div>
 
         <h1 className="font-bold text-[24px]">TODAY'S FORECAST</h1>
-        <div className="flex justify-between centerw-full p-10 py-6 ">
-          <div className="flex justify-between gap-2">
+        <div className="flex justify-center w-full px-10 py-6 ">
+          <div className="flex justify-between gap-2 flex-wrap">
+            <ForecastCard />
+            <ForecastCard />
             <ForecastCard />
             <ForecastCard />
             <ForecastCard />

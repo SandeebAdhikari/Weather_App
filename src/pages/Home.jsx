@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="flex justify-between w-11/12">
+      <div className="flex justify-between w-full">
         <CurrentWeather />
         <WeeklyForecast />
       </div>

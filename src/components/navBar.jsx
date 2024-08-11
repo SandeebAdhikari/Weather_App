@@ -5,8 +5,8 @@ import CurrentDateTime from "../components/currentDateAndTime";
 const NavBar = () => {
   return (
     <>
-      <div className="flex flex-col w-11/12 bg-base-100 m-10">
-        <div className="flex justify-between w-full p-2">
+      <div className="flex flex-col w-full bg-base-100 p-10">
+        <div className="flex justify-between p-2">
           <div className="mb-4">
             <h1 className="text-[24px]">WEATHER</h1>
             <p className="text-[20px]">App</p>
