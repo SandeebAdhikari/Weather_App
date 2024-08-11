@@ -1,13 +1,17 @@
 import React from "react";
 import NavBar from "../components/navBar";
+import CurrentWeather from "../components/currentWeather";
+import WeeklyForecast from "../components/weeklyForecast";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <NavBar />
-      <CurrentWeather />
-      <WeeklyForecast />
-    </div>
+      <div className="flex justify-between w-11/12">
+        <CurrentWeather />
+        <WeeklyForecast />
+      </div>
+    </>
   );
 };
 
