@@ -6,7 +6,7 @@ const WeeklyForecast = () => {
     <>
       <div className="flex flex-col items-center w-1/2  md:px-10">
         <h1 className="font-bold text-[24px]">WEEKLY FORECAST</h1>
-        <div className="flex flex-col w-full my-6 gap-3 ">
+        <div className="flex flex-col w-full my-10 gap-3 ">
           <WeeklyForecastCard />
           <WeeklyForecastCard />
           <WeeklyForecastCard />

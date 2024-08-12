@@ -9,9 +9,9 @@ import ForecastCard from "./cards/forecastCard";
 const currentWeather = () => {
   return (
     <>
-      <div className="flex flex-col items-center w-1/2">
+      <div className="flex flex-col items-center w-1/2 gap-10">
         <h1 className="font-bold text-[24px]">CURRENT WEATHER</h1>
-        <div className="flex justify-between w-full px-10 py-6">
+        <div className="flex justify-between w-full px-10 ">
           <div className="flex flex-col justify-between items-center">
             <h1 className="font-bold">LONDON,DE</h1>
             <p>Today 13 Feb</p>
