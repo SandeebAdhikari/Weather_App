@@ -24,7 +24,7 @@ function CurrentDateTime({ showAmPm = true, showDate = true }) {
 
   return (
     <div className="p-4">
-      <p className="text-lg mt-2">
+      <p className="text-lg mt-2 text-black">
         {showDate && currentDateTime.toLocaleDateString()} {displayTime}
       </p>
     </div>

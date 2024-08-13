@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+
+body {
+  color: #000000;
+}
+
+.navbar {
+  background-color: transparent; /* Ensure it's transparent to allow the App background to show through */
+}
+
+.clear {
+  background: linear-gradient(to top, #f7b42c, #fc575e);
+}
+
+.cloudy {
+  background: linear-gradient(to top, #bdc3c7, #2c3e50);
+}
+
+.rainy {
+  background: linear-gradient(to top, #00c6ff, #0072ff);
+}
+
+.snowy {
+  background: linear-gradient(to top, #83a4d4, #b6fbff);
+}
+
+/* Add more styles as needed */
+
+.default-background {
+  background: linear-gradient(to top, #e0eafc, #cfdef3);
+}

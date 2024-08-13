@@ -16,7 +16,7 @@ const NavBar = ({ onCityNameChange }) => {
   };
   return (
     <>
-      <div className="flex flex-col w-full bg-base-100 p-10">
+      <div className="flex flex-col w-full p-10">
         <div className="flex justify-between p-2">
           <div className="mb-4">
             <h1 className="text-[24px]">WEATHER</h1>
