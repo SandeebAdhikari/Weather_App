@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import GitHubImg from "/assets/github.png";
 import CurrentDateTime from "../components/currentDateAndTime";
 
-const NavBar = () => {
+const NavBar = ({ onCityNameChange }) => {
+  const [cityName, setCityName] = useState("");
+
+  const handleInputChange = (event) => {
+    setCityName(event.target.value);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      onCityNameChange(cityName);
+    }
+  };
   return (
     <>
       <div className="flex flex-col w-full bg-base-100 p-10">
@@ -42,7 +53,10 @@ const NavBar = () => {
         <div className="flex items-center form-control">
           <input
             type="text"
-            placeholder="LONDON, GB"
+            value={cityName}
+            onChange={handleInputChange}
+            onKeyDown={handleKeyDown}
+            placeholder="MORRISTOWN"
             className="input input-bordered bg-white w-full "
           />
         </div>

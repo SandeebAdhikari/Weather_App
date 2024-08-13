@@ -6,7 +6,7 @@ function CurrentDateTime({ showAmPm = true, showDate = true }) {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentDateTime(new Date());
-    }, 1000); // Update every second
+    }, 1000);
 
     // Clean up the interval on component unmount
     return () => clearInterval(timer);

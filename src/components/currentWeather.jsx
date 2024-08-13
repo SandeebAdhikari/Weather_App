@@ -6,22 +6,30 @@ import Humidity from "/assets/humidity.svg";
 import Cloud from "/assets/icons/cloud.png";
 import ForecastCard from "./cards/forecastCard";
 
-const currentWeather = () => {
+const CurrentWeather = ({ weatherData, cityName }) => {
+  if (!weatherData) {
+    return <p>Loading...</p>;
+  }
+
+  const current = weatherData.current;
+  const iconCode = current.weather[0].icon;
+  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
   return (
     <>
       <div className="flex flex-col items-center w-1/2 gap-10">
         <h1 className="font-bold text-[24px]">CURRENT WEATHER</h1>
         <div className="flex justify-between w-full px-10 ">
           <div className="flex flex-col justify-between items-center">
-            <h1 className="font-bold">LONDON,DE</h1>
-            <p>Today 13 Feb</p>
+            <h1 className="font-bold">{cityName.toUpperCase()}</h1>
+            <p>Today {new Date(current.dt * 1000).toLocaleDateString()}</p>
           </div>
           <div className="flex flex-col justify-between items-center">
-            <h1 className="font-bold">7 °C </h1>
-            <p>Broken Cloud</p>
+            <h1 className="font-bold">{current.temp} °C </h1>
+            <p>{current.weather[0].description}</p>
           </div>
           <div className="flex justify-between items-center">
-            <img src={Cloud} className="w-14" />
+            <img src={iconUrl} className="w-14" alt="Weather Icon" />
           </div>
         </div>
 
@@ -32,40 +40,37 @@ const currentWeather = () => {
               <CgThermostat size={24} />
               <h1>Feels Like</h1>
             </div>
-            <p>5 °C </p>
+            <p>{current.feels_like} °C </p>
           </div>
           <div className="flex flex-col justify-between items-center gap-2">
             <div className="flex gap-2">
               <FiWind size={24} />
               <h1>Winds</h1>
             </div>
-            <p>3.09 m/s</p>
+            <p>{current.wind_speed} m/s</p>
           </div>
           <div className="flex flex-col justify-between items-center">
             <div className="flex gap-2">
               <MdFilterDrama size={24} />
               <h1>Clouds</h1>
             </div>
-            <p>75%</p>
+            <p>{current.clouds}%</p>
           </div>
           <div className="flex flex-col justify-between items-center">
             <div className="flex gap-2">
-              <img src={Humidity} className="w-6" />
+              <img src={Humidity} className="w-6" alt="Humidity Icon" />
               <h1>Humidity</h1>
             </div>
-            <p>91%</p>
+            <p>{current.humidity}%</p>
           </div>
         </div>
 
         <h1 className="font-bold text-[24px]">TODAY'S FORECAST</h1>
         <div className="flex justify-center w-full px-10 py-6 ">
           <div className="flex justify-between gap-2 flex-wrap">
-            <ForecastCard />
-            <ForecastCard />
-            <ForecastCard />
-            <ForecastCard />
-            <ForecastCard />
-            <ForecastCard />
+            {weatherData.hourly.slice(0, 6).map((hour, index) => (
+              <ForecastCard key={index} hourData={hour} />
+            ))}
           </div>
         </div>
       </div>
@@ -73,4 +78,4 @@ const currentWeather = () => {
   );
 };
 
-export default currentWeather;
+export default CurrentWeather;
