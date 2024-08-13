@@ -6,10 +6,7 @@ function App() {
 
   const handleBackgroundClassChange = (newClass) => {
     console.log("Before set:", newClass);
-    setBackgroundClass(""); // Clear the class
-    setTimeout(() => {
-      setBackgroundClass(newClass); // Reapply the new class after a brief delay
-    }, 0);
+    setBackgroundClass(newClass);
     console.log("After set:", backgroundClass);
   };
 
@@ -18,9 +15,11 @@ function App() {
   }, [backgroundClass]);
 
   return (
-    <div className={`min-h-screen ${backgroundClass}`}>
-      <Home onBackgroundClassChange={handleBackgroundClassChange} />
-    </div>
+    <>
+      <div className={`min-h-screen ${backgroundClass}`}>
+        <Home onBackgroundClassChange={handleBackgroundClassChange} />
+      </div>
+    </>
   );
 }
 
