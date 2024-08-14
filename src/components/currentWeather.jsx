@@ -18,7 +18,7 @@ const CurrentWeather = ({ weatherData, cityName }) => {
   return (
     <>
       <div className="flex flex-col items-center w-1/2 gap-10">
-        <h1 className="font-bold text-[24px] ">CURRENT WEATHER</h1>
+        <h1 className="font-bold text-[24px]">CURRENT WEATHER</h1>
         <div className="flex justify-between w-full px-10 ">
           <div className="flex flex-col justify-between items-center">
             <h1 className="font-bold">{cityName.toUpperCase()}</h1>
@@ -33,7 +33,7 @@ const CurrentWeather = ({ weatherData, cityName }) => {
           </div>
         </div>
 
-        <h1 className="font-bold text-[24px] ">AIR CONDITIONS</h1>
+        <h1 className="font-bold text-[24px]">AIR CONDITIONS</h1>
         <div className="flex justify-between w-full px-10 py-6">
           <div className="flex flex-col justify-between items-center">
             <div className="flex">

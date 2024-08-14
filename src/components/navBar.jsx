@@ -28,6 +28,7 @@ const NavBar = ({ onCityNameChange }) => {
       }
     }
   };
+
   return (
     <>
       <div className="flex flex-col w-full p-10">

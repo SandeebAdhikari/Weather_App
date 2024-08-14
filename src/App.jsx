@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className={`min-h-screen ${backgroundClass}`}>
-        <div className="background-overlay"></div>
+        <div className="background-overlay"></div> {/* Apply overlay here */}
         <Home onBackgroundClassChange={handleBackgroundClassChange} />
       </div>
     </>
