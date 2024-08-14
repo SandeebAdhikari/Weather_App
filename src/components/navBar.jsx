@@ -1,17 +1,31 @@
 import React, { useState } from "react";
 import GitHubImg from "/assets/github.png";
 import CurrentDateTime from "../components/currentDateAndTime";
+import { getCoordinates } from "../utils/fetchCoordinate";
 
 const NavBar = ({ onCityNameChange }) => {
   const [cityName, setCityName] = useState("");
+  const [isInvalid, setIsInvalid] = useState(false);
 
   const handleInputChange = (event) => {
     setCityName(event.target.value);
+    setIsInvalid(false);
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = async (event) => {
     if (event.key === "Enter") {
-      onCityNameChange(cityName);
+      try {
+        // Try fetching the coordinates to validate the city name
+        await getCoordinates(cityName);
+        setIsInvalid(false);
+        onCityNameChange(cityName);
+      } catch (error) {
+        // Briefly reset the invalid state to false to trigger the animation again
+        setIsInvalid(false);
+        setTimeout(() => {
+          setIsInvalid(true);
+        }, 0);
+      }
     }
   };
   return (
@@ -57,7 +71,9 @@ const NavBar = ({ onCityNameChange }) => {
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
             placeholder="MORRISTOWN"
-            className="input input-bordered bg-black bg-opacity-50  w-full "
+            className={`input input-bordered bg-white text-black w-full transition-all ${
+              isInvalid ? "border-red-500 animate-shake" : ""
+            }`}
           />
         </div>
       </div>

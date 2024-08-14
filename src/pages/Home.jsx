@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../components/navBar";
 import CurrentWeather from "../components/currentWeather";
 import WeeklyForecast from "../components/weeklyForecast";
-import { getCoordinates } from "../components/cards/fetchCoordinate.js";
+import { getCoordinates } from "../utils/fetchCoordinate.js";
 import { getBackgroundClass } from "../utils/backgroundMapping";
 
 const Home = ({ onBackgroundClassChange }) => {
