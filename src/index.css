@@ -5,7 +5,8 @@
 /* Custom styles */
 
 body {
-  color: #000000;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar {
@@ -13,23 +14,33 @@ body {
 }
 
 .clear {
-  background: linear-gradient(to top, #f7b42c, #fc575e);
+  background-image: url("/assets/images/clear-sky.png"); /* Replace with your clear sky image path */
+  background-size: cover;
+  background-position: center;
 }
 
 .cloudy {
-  background: linear-gradient(to top, #bdc3c7, #2c3e50);
+  background-image: url("/assets/images/cloudy.png"); /* Replace with your cloudy image path */
+  background-size: cover;
+  background-position: center;
 }
 
 .rainy {
-  background: linear-gradient(to top, #00c6ff, #0072ff);
+  background-image: url("/assets/images/rainy.png"); /* Replace with your rainy image path */
+  background-size: cover;
+  background-position: center;
 }
 
 .snowy {
-  background: linear-gradient(to top, #83a4d4, #b6fbff);
+  background-image: url("/assets/images/snowy.png"); /* Replace with your snowy image path */
+  background-size: cover;
+  background-position: center;
 }
 
 /* Add more styles as needed */
 
 .default-background {
-  background: linear-gradient(to top, #e0eafc, #cfdef3);
+  background-image: url("/assets/images/default.jpg"); /* Replace with your default image path */
+  background-size: cover;
+  background-position: center;
 }

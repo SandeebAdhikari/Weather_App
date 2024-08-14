@@ -5,9 +5,7 @@ function App() {
   const [backgroundClass, setBackgroundClass] = useState("");
 
   const handleBackgroundClassChange = (newClass) => {
-    console.log("Before set:", newClass);
     setBackgroundClass(newClass);
-    console.log("After set:", backgroundClass);
   };
 
   useEffect(() => {
@@ -17,6 +15,7 @@ function App() {
   return (
     <>
       <div className={`min-h-screen ${backgroundClass}`}>
+        <div className="background-overlay"></div>
         <Home onBackgroundClassChange={handleBackgroundClassChange} />
       </div>
     </>

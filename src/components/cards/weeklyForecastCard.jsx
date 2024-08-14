@@ -17,7 +17,7 @@ const WeeklyForecastCard = ({ dayData }) => {
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   return (
-    <div className="flex justify-between gap-12 rounded-lg shadow-sm shadow-white">
+    <div className="flex justify-between gap-12 bg-black bg-opacity-50 rounded-lg shadow-sm shadow-white">
       <div className="flex flex-col gap-2 px-8 py-4">
         <h1 className="font-bold">{dayName}</h1>
         <div className="flex gap-1 items-center">

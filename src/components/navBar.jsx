@@ -18,18 +18,18 @@ const NavBar = ({ onCityNameChange }) => {
     <>
       <div className="flex flex-col w-full p-10">
         <div className="flex justify-between p-2">
-          <div className="mb-4">
+          <div className="mb-4 ">
             <h1 className="text-[24px]">WEATHER</h1>
             <p className="text-[20px]">App</p>
           </div>
 
           <CurrentDateTime />
 
-          <div className="flex flex-end dropdown ">
+          <div className="flex flex-end dropdown  ">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle avatar"
+              className="btn btn-ghost btn-circle avatar "
             >
               <div className="w-31 rounded-full">
                 <img alt="Tailwind CSS Navbar component" src={GitHubImg} />
@@ -57,7 +57,7 @@ const NavBar = ({ onCityNameChange }) => {
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
             placeholder="MORRISTOWN"
-            className="input input-bordered bg-white w-full "
+            className="input input-bordered bg-black bg-opacity-50  w-full "
           />
         </div>
       </div>

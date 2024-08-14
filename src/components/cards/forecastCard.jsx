@@ -10,8 +10,8 @@ const ForecastCard = ({ hourData }) => {
   });
 
   return (
-    <div className="flex flex-col w-32 h-44 rounded-lg shadow-sm shadow-white">
-      <div className="text-center">
+    <div className="flex flex-col w-32 h-44  bg-black bg-opacity-50 rounded-lg shadow-sm shadow-white">
+      <div className="text-center mt-5">
         <p>{time}</p>
       </div>
       <div className="flex justify-center">
