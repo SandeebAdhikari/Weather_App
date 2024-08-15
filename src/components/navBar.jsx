@@ -15,12 +15,10 @@ const NavBar = ({ onCityNameChange }) => {
   const handleKeyDown = async (event) => {
     if (event.key === "Enter") {
       try {
-        // Try fetching the coordinates to validate the city name
         await getCoordinates(cityName);
         setIsInvalid(false);
         onCityNameChange(cityName);
       } catch (error) {
-        // Briefly reset the invalid state to false to trigger the animation again
         setIsInvalid(false);
         setTimeout(() => {
           setIsInvalid(true);
@@ -31,7 +29,7 @@ const NavBar = ({ onCityNameChange }) => {
 
   return (
     <>
-      <div className="flex flex-col w-full p-10">
+      <div className="flex flex-col w-full p-10 ">
         <div className="flex justify-between p-2">
           <div className="mb-4 ">
             <h1 className="text-[24px]">WEATHER</h1>

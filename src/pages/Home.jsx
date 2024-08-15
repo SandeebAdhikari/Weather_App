@@ -38,7 +38,7 @@ const Home = ({ onBackgroundClassChange }) => {
   return (
     <>
       <NavBar onCityNameChange={handleCityNameChange} />
-      <div className="flex flex-col lg:flex-row justify-between w-full px-4 sm:px-8 md:px-12 lg:px-16">
+      <div className="flex justify-between w-full">
         <CurrentWeather weatherData={weatherData} cityName={cityName} />
         <WeeklyForecast weatherData={weatherData} />
       </div>
