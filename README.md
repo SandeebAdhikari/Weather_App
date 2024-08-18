@@ -1,8 +1,8 @@
 # Weather App
 
-![Rainy](/assets/sceenshots/rainy.png)
-![Clear Sky](/assets/sceenshots/clear-sky.png)
-![Cloudy](/assets/sceenshots/cloudy.png)
+![Rainy](public/assets/screenshots/rain.png)
+![Clear Sky](public/assets/screenshots/clearSky.png)
+![Cloudy](public/assets/screenshots/cloudy.png)
 
 ## Overview
 
