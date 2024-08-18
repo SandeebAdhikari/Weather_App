@@ -10,5 +10,5 @@ export async function getCoordinates(cityName) {
 
   const data = await response.json();
   const { lon, lat } = data.coord;
-  return { lon, lat };
+  return { lon, lat, apiKey };
 }

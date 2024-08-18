@@ -3,7 +3,6 @@ import { FiWind } from "react-icons/fi";
 import { CgThermostat } from "react-icons/cg";
 import { MdFilterDrama } from "react-icons/md";
 import Humidity from "/assets/humidity.svg";
-import Cloud from "/assets/icons/cloud.png";
 import ForecastCard from "./cards/forecastCard";
 
 const CurrentWeather = ({ weatherData, cityName }) => {

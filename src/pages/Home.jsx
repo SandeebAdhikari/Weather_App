@@ -13,9 +13,9 @@ const Home = ({ onBackgroundClassChange }) => {
     setCityName(newCityName);
 
     try {
-      const { lon, lat } = await getCoordinates(newCityName);
+      const { lon, lat, apiKey } = await getCoordinates(newCityName);
       const weatherResponse = await fetch(
-        `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=10912080c80f9bd3a00c034b2341867d&units=metric`
+        `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
       );
       const data = await weatherResponse.json();
       setWeatherData(data);
