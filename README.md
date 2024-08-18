@@ -1,8 +1,8 @@
 # Weather App
 
-![Rainy](./assets/sceenshots/rainy.png)
-![Clear Sky](./assets/sceenshots/clear-sky.png)
-![Cloudy](./assets/sceenshots/cloudy.png)
+![Rainy](/assets/sceenshots/rainy.png)
+![Clear Sky](/assets/sceenshots/clear-sky.png)
+![Cloudy](/assets/sceenshots/cloudy.png)
 
 ## Overview
 
@@ -76,31 +76,6 @@ yarn run dev
 
 **Search for a City:** Enter the name of the city in the search bar and press Enter to get the current weather and forecast.
 **Responsive UI:** The app adapts to different screen sizes, providing a seamless experience on mobile, tablet, and desktop devices.
-
-## File Structure
-
-├── public/
-│ ├── assets/
-│ │ ├── humidity.svg
-│ │ ├── weather-app-screenshot.png
-│ │ └── ...other images
-│ └── index.html
-├── src/
-│ ├── components/
-│ │ ├── CurrentWeather.jsx
-│ │ ├── WeeklyForecast.jsx
-│ │ └── ...other components
-│ ├── pages/
-│ │ └── Home.jsx
-│ ├── utils/
-│ │ ├── backgroundMapping.js
-│ │ └── fetchCoordinate.js
-│ ├── App.jsx
-│ ├── index.css
-│ └── index.js
-├── .env
-├── README.md
-└── package.json
 
 ## Dependencies
 
