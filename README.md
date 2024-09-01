@@ -60,7 +60,7 @@ To run the AI-Powered Weather App locally, follow these steps:
 
 ### Clear Sky
 
-![Clear Sky] (./public/assets/screenshots/clearSky.png)
+![Clear Sky](./public/assets/screenshots/clearSky.png)
 
 ### Rain
 
