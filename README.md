@@ -19,14 +19,8 @@ Welcome to the AI-Powered Weather App! This project is designed to provide real-
   - JavaScript
   - ReactJS
 
-- **Backend**:
-  - Node.js (optional if using a server-side integration)
 - **APIs**:
-
-  - Weather API (RapidAPI integration)
-
-- **State Management**:
-  - Redux
+  - Weather API (https://openweathermap.org/api)
 
 ## Installation
 
@@ -35,8 +29,8 @@ To run the AI-Powered Weather App locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/YourUsername/AI-Powered-Weather-App.git
-   cd AI-Powered-Weather-App
+   git clone https://github.com/SandeebAdhikari/Weather_App
+   cd Weather_App
    ```
 
 2. **Install dependencies**:
@@ -65,25 +59,17 @@ To run the AI-Powered Weather App locally, follow these steps:
 
 ## Screenshots
 
-### Main Page
+### Clear Sky
 
 ![Clear Sky] (./public/assets/screenshots/clearSky.png)
 
-### Product List
+### Rain
 
 ![Rainy Sky](./public/assets/screenshots/rain.png)
 
-### Product Details
+### Cloudy
 
 ![Cloudy](./public/assets/screenshots/cloudy.png)
-
-### Wishlist
-
-![Wishlist Screenshot](path_to_your_wishlist_screenshot.png)
-
-## Video Demo
-
-[![Video Demo](https://img.youtube.com/vi/your_video_id_here/0.jpg)](https://www.youtube.com/watch?v=your_video_id_here)
 
 ## Contributing
 
