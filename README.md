@@ -93,11 +93,3 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-If you have any questions, feel free to contact me at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-**Note**: This is a hypothetical example. Replace placeholder content (e.g., links, paths, etc.) with actual data relevant to your project.
