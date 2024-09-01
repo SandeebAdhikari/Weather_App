@@ -4,11 +4,10 @@ Welcome to the AI-Powered Weather App! This project is designed to provide real-
 
 ## Features
 
-- **Real-Time Weather Data**: Fetches real-time weather data from a reliable weather API.
-- **Dynamic Backgrounds**: The background changes according to the current weather conditions, such as sunny, rainy, cloudy, etc.
-- **Responsive Design**: Optimized for various screen sizes, including mobile, tablet, and desktop.
-- **User-Friendly Interface**: Intuitive design for easy navigation and quick access to weather information.
-- **AI Integration**: Provides personalized weather insights based on user preferences.
+- **Current Weather:** Displays the current temperature, weather description, and other details such as wind speed, humidity, and pressure.
+- **Weekly Forecast:** Provides a 7-day weather forecast with detailed information.
+- **Dynamic Background:** The app's background changes based on the current weather conditions.
+- **Responsive Design:** The app is fully responsive and works well on mobile, tablet, and desktop devices.
 
 ## Technologies Used
 
